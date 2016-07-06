@@ -1,0 +1,30 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width: 100%;
+	height:100%;
+}
+html{
+	font-size: 100px;
+}
+#warp{
+	width:100%;
+	height:100%;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+}
+.city_list{
+	width: 100%;
+	-webkit-box-flex:1;
+	overflow: hidden;
+}
+.city_list ul li{
+	width:100%;
+	height: 0.43rem;
+	border-bottom: 1px solid #dddddd;
+	line-height: 0.43rem;
+	padding-left: 0.21rem;
+	color: #666666;
+}

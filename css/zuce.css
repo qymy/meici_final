@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+html{
+	font-size: 100px;
+}
+#warp{
+	width:100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+}
+.main{
+	width:100%;
+	-webkit-box-flex:1;
+}
+.info{
+	width: 90%;
+	margin: 0 auto;
+}
+.info p{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border-bottom: 1px solid #dddddd;
+}
+.info p.first{
+	border-bottom: 1px solid #ed5858;
+}
+.info p input{
+	border: none;
+	outline: none;
+	height: 0.45rem;
+	padding-left: 0.21rem;
+}
+.info p b{
+	display: inline-block;
+	width: 0.64rem;
+	text-align: right;
+}

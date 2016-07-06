@@ -1,0 +1,287 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+input, select, textarea, button {
+  -webkit-appearance: none; }
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei"; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box; }
+
+html {
+  font-size: 100px; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 0.5rem;
+  position: relative;
+  background: #f5f5f5; }
+  .header h2 {
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.20rem; }
+  .header a {
+    position: absolute;
+    width: 0.12rem;
+    height: 0.21rem;
+    background-image: url("../images/tuhao-5_06.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    top: 50%;
+    margin-top: -0.1rem;
+    left: 0.13rem; }
+
+.contain {
+  -webkit-flex-grow: 1;
+  width: 100%;
+  background: #eee; }
+
+.redBox {
+  width: 100%;
+  height: 0.9rem;
+  background: #ed5858;
+  color: #fff; }
+  .redBox h5 {
+    font-size: 0.14rem;
+    padding-left: 0.1rem;
+    line-height: 0.3rem; }
+  .redBox ul {
+    display: -webkit-flex;
+    -webkit-flex-direction: row; }
+    .redBox ul li {
+      width: 33%;
+      padding-left: 0.2rem;
+      line-height: 0.25rem;
+      font-size: 0.12rem; }
+
+.zhanghuyue {
+  height: 0.5rem;
+  background: #eeeeee;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  padding-left: 0.1rem; }
+  .zhanghuyue label {
+    display: block;
+    width: 0.9rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .zhanghuyue span {
+    display: block;
+    width: 1.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .zhanghuyue p {
+    width: 0.8rem;
+    height: 0.28rem;
+    border: 2px solid grey;
+    border-radius: 0.05rem;
+    text-align: center;
+    line-height: 0.25rem;
+    margin-top: 0.1rem; }
+
+.touzimoney {
+  height: 0.5rem;
+  background: #fff;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  padding-left: 0.1rem;
+  margin-bottom: 0.15rem; }
+  .touzimoney label {
+    display: block;
+    width: 0.9rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .touzimoney span {
+    display: block;
+    width: 1.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .touzimoney p {
+    width: 0.8rem;
+    height: 0.5rem;
+    text-align: right;
+    line-height: 0.5rem;
+    padding-right: 0.1rem; }
+
+.tiyanmoney {
+  height: 0.5rem;
+  background: #fff;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  border-bottom: 1px solid #eee;
+  padding-left: 0.1rem; }
+  .tiyanmoney label {
+    display: block;
+    width: 0.9rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .tiyanmoney span {
+    display: block;
+    width: 1.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .tiyanmoney p {
+    width: 0.48rem;
+    height: 0.28rem;
+    border-radius: 0.05rem;
+    text-align: center;
+    line-height: 0.28rem;
+    margin-top: 0.1rem;
+    color: #fff;
+    background: #ccc;
+    margin-left: 0.15rem; }
+
+.caimimoney {
+  height: 0.5rem;
+  background: #fff;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  padding-left: 0.1rem; }
+  .caimimoney label {
+    display: block;
+    width: 0.9rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .caimimoney span {
+    display: block;
+    width: 1.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem; }
+  .caimimoney p {
+    width: 0.8rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem; }
+
+.txt {
+  width: 100%;
+  height: 0.51rem;
+  line-height: 0.51rem;
+  text-align: center; }
+  .txt span {
+    color: #faac6f; }
+
+.btn {
+      width: 90%;
+      margin: 0 5%;
+    margin-top: 0.4rem;
+    height: 0.43rem;
+    background: #fad937;
+    border-bottom: 0.02rem solid #fab937;
+    border-radius: 8px;
+    font-size: 0.16rem;
+    line-height: 0.43rem;
+    text-align: center; 
+    font-weight: normal;
+
+}
+
+/*-------------------------投资成功页面-------------------------*/
+.con {
+  background: #fff; }
+  .con dl {
+    width: 2rem;
+    height: 2.15rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.5rem; }
+    .con dl img {
+      width: 0.8rem;
+      height: 0.8rem; }
+    .con dl dd h2 {
+      font-size: 25px;
+      margin-bottom: 0.2rem; }
+    .con dl dd p {
+      line-height: 0.5rem;
+      height: 0.3rem;
+      color: #d7d7d7; }
+
+.normal {
+  font-weight: normal;
+  margin-top: 0.1rem; }
+
+/*--------------------------投资失败页面---------------------------------*/
+/*--------------------------投资报错页面---------------------------------*/
+.touzimoney1 {
+  margin-bottom: 0; }
+
+.tzbaocuo {
+  width: 2.5rem;
+  height: 0.4rem;
+  background: #585858;
+  color: #fff;
+  text-align: center;
+  line-height: 0.4rem;
+  border-radius: 0.08rem;
+  margin: 0 auto;
+  margin-top: 1.09rem; }
+
+/*----------------------------已通过身份认证----------------------------*/
+.contain {
+  background: #eeeeee; }
+
+.greenBox {
+  width: 100%;
+  height: 2rem;
+  background: #74ba2f;
+  margin: 0 auto; }
+  .greenBox dl {
+    width: 1.8rem;
+    height: 2.15rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.5rem; }
+    .greenBox dl img {
+      width: 0.8rem;
+      height: 0.8rem; }
+    .greenBox dl dd h2 {
+      font-size: 25px;
+      margin-bottom: 0.2rem; }
+    .greenBox dl dd p {
+      line-height: 0.3rem;
+      height: 0.3rem;
+      color: #fff; }
+
+.fform p {
+  width: 100%;
+  height: 0.45rem;
+  background: #fff;
+  line-height: 0.45rem;
+  padding-left: 0.15rem; }
+  .fform p:nth-child(1) {
+    border-bottom: 1px solid #eee; }
+  .fform p input {
+    border: none;
+    outline: none;
+    text-align: right;
+    width: 2.2rem;
+    height: 0.4rem; }
+
+/*----------------------投资2页面未使用过--------------------------*/
+.touzijine {
+  border: none;
+  outline: none;
+  font-size: 14px; }
+
+#useBtn {
+  background: #ed5858; }
+
+/*# sourceMappingURL=touzi2.css.map */

@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height:100%;
+}
+html{
+	font-size: 100px;
+}
+#warp{
+	width:100%;
+	height:100%;
+}
+.header{
+	width:100%;
+	height: 0.5rem;
+	position: relative;
+}
+.header a{
+	position: absolute;
+	width:0.11rem;
+	height:0.21rem;
+	background: url("../images/back_03.png");
+	background-size:100% 100%;
+	left: 0.15rem;
+	top:50%;
+	margin-top: -0.1rem;
+}
+.tit_icon{
+	width:0.6rem;
+	height:0.6rem;
+	margin: 0 auto;
+	border:0.03rem solid #f2f2f2;
+	border-radius: 50%;
+	margin-top: 0.23rem;
+}
+.tit_icon img{
+	width:100%;
+}
+.form{
+	width:90%;
+	margin: 0 auto;
+	margin-top: 0.37rem;
+}
+.form p{
+	width:100%;
+	height: 0.39rem;
+	position: relative;
+	margin-top: 0.04rem;
+}
+.form p input{
+	border:none;
+	outline: none;
+	width:60%;
+	height: 100%;
+	padding-left: 0.6rem;
+}
+.form .number{
+	border-bottom: 1px solid #ed5858;
+}
+.form .number span{
+	position: absolute;
+	width:0.21rem;
+	height:0.28rem;
+	background: url("../images/icon5_06.png");
+	background-size: 100% 100%;
+	left:0.12rem;
+	top:50%;
+	margin-top: -0.14rem;
+}
+.form .pwd{
+	border-bottom: 1px solid #dddddd;
+}
+.form .pwd span{
+	position: absolute;
+	width: 0.21rem;
+	height:0.23rem;
+	background: url("../images/icon6_03.png");
+	background-size: 100% 100%;
+	left:0.12rem;
+	top:50%;
+	margin-top: -0.11rem;
+}
+.form .number b{
+	position: absolute;
+	width:0.18rem;
+	height:0.18rem;
+	background: url("../images/icon7_09.png");
+	background-size: 100% 100%;
+	right:0.06rem;
+	top:50%;
+	margin-top: -0.09rem;
+}
+.form .pwd b{
+	position: absolute;
+	width:0.2rem;
+	height:0.12rem;
+	background: url("../images/icon8_11.png");
+	background-size: 100% 100%;
+	right:0.05rem;
+	top:50%;
+	margin-top: -0.06rem; 
+}
+.form .btn{
+	width: 100%;
+	height: 0.45rem;
+	background: #ed5858;
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.45rem;
+	margin-top: 0.2rem;
+	font-size: 14px;
+	color: #fff;
+}
+.form .forget{
+	color: #5270ab;
+	text-align: center;
+	line-height: 0.45rem;
+}
+.zuce{
+	position: absolute;
+	width: 90%;
+	height: 0.43rem;
+	border-radius: 0.1rem;
+	border:1px solid #ed5858;
+	bottom: 0.25rem;
+	left: 50%;
+	margin-left: -45%;
+	text-align: center;
+	line-height: 0.43rem;
+	color: #ed5858;
+	font-size: 16px;
+}

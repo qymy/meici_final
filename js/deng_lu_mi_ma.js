@@ -1,0 +1,25 @@
+;(function($){
+	//动态设置html的font-size
+	var ini_width=640/2;
+	function set_font(){
+		var set_scale=$(window).width()/ini_width*100;//ip5下的尺寸正好为2:1 所以设置font-size为100;
+		$("html").css("font-size",set_scale);
+	}
+	$(window).on("resize",function(e){
+		set_font();
+	})
+
+	//为返回按钮添加单击事件
+	$(".back").on("click",function(){
+		location.href="she_zhi.html";
+	})
+
+	$(".tui_chu").on("click",function(){
+		$(".shadow").show().css("opacity","0.5");
+		$(".tip").show();
+	})
+	$(".relog").on("click",function(){
+		$(".shadow").hide();
+		$(".tip").hide();
+	})
+})(Zepto)
