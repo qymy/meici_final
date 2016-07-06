@@ -1,0 +1,70 @@
+@import url(reset.css);
+body, html, .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei"; }
+
+html {
+  font-size: 100px; }
+
+/*-----------------box--------------*/
+.box {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+/*-----------------header--------------*/
+.header {
+  height: 0.8rem;
+  line-height: 0.5rem;
+  background: #f5f5f5;
+  border-bottom: 0.01rem solid #ddd; }
+  .header a:nth-of-type(1) {
+    float: left;
+    padding-left: 0.1rem; }
+    .header a:nth-of-type(1) img {
+      width: 0.11rem;
+      height: 0.21rem;
+      vertical-align: middle; }
+  .header a:nth-of-type(2) {
+    float: right;
+    padding-right: 0.1rem; }
+    .header a:nth-of-type(2) img {
+      width: 0.21rem;
+      height: 0.24rem;
+      vertical-align: middle; }
+  .header h3 {
+    float: left;
+    margin-left: 33%;
+    font-size: 0.20rem; }
+
+/*-----------------main--------------*/
+.main {
+  -webkit-flex-grow: 1; }
+  .main .item {
+    width: 100%;
+    height: 0.49rem;
+    padding: 0 0.15rem;
+    border-bottom: 0.01rem solid #ddd; }
+    .main .item p {
+      width: 80%;
+      font-size: 0.12rem;
+      line-height: 0.18rem;
+      padding-top: 0.05rem;
+      float: left; }
+      .main .item p time {
+        color: #b5b5b5; }
+    .main .item span {
+      width: 20%;
+      float: right;
+      line-height: 0.49rem;
+      color: #6bb347; }
+    .main .item:nth-of-type(1) span, .main .item:nth-of-type(7) span {
+      color: #ed5858; }
+    .main .item:nth-of-type(6) span {
+      color: #aaa; }
+
+/*# sourceMappingURL=jiao_yi_ji_lu.css.map */

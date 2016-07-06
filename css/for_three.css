@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+html{
+	font-size: 100px;
+}
+#warp{
+	width:100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+}
+.main{
+	width:100%;
+	-webkit-box-flex:1;
+	background: #eeeeee;
+}
+.main .number{
+	width:100%;
+	height: 0.43rem;
+	border-top:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	background: #fff;
+	position: relative;
+}
+.main .pwd{
+	margin-top: 0.09rem;
+}
+.main .number1{
+	border-top: none;
+}
+.main .number span{
+	line-height: 0.43rem;
+	padding-left: 0.38rem;
+	font-size: 12px;
+	color: #666666;
+}
+.main .number input{
+	border:none;
+	outline: none;
+	height: 0.4rem;
+}
+.main .number .new_pwd{
+	padding-left: 0.44rem;
+}
+.main .number .new_agin{
+	padding-left: 0.21rem;
+}
+
+.main .btn{
+	display: block;
+	width:90%;
+	height: 0.43rem;
+	margin:0 auto;
+	text-align: center;
+	line-height: 0.43rem;
+	background: #fad937;
+	margin-top: 0.15rem;
+	border-radius: 0.1rem;
+	border-bottom: 2px solid #fab937;
+	font-size: 16px;
+}  

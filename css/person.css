@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+html{
+	font-size: 100px;
+}
+#warp{
+	width:100%;
+	height:100%;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	position: relative;
+}
+.header a:nth-child(3){
+	position: absolute;
+	line-height: 0.5rem;
+	right:0.15rem;
+	top:0;
+}
+.header h1{
+	color: #ffcccc;
+}
+.list{
+	width:100%;
+	-webkit-box-flex:1;
+	background: #eeeeee;
+}
+.banner{
+	width:100%;
+	height:0.9rem;
+	background: #ff7878;
+}
+.banner dl{
+	display: -webkit-box;
+}
+.banner dl dt{
+	-webkit-box-flex:1;
+	padding-left: 0.33rem;
+	padding-top: 0.15rem;
+}
+.banner dl dd{
+	-webkit-box-flex:1;
+	padding-top: 0.12rem;
+}
+.banner dl dd h4{
+	color: #fff;
+	text-align: left;
+}
+.banner dl dd small{
+	color: #ffcccc;
+	font-size: 12px;
+	text-align: left; 
+}
+.banner dl dd p{
+	color: #ffff00;
+	font-size: 12px;
+	text-align: left;
+}
+.banner dl dt img{
+	width:0.6rem;
+	height:auto;
+}
+.info{
+	width:100%;
+}
+.info ul{
+	background: #fff;
+	margin-top: 0.09rem;
+}
+.info ul li{
+	width:100%;
+	height:0.43rem;
+	line-height: 0.43rem;
+	border-top: 1px solid #dddddd;
+	position: relative;
+}
+.info ul li.border{
+	border-bottom: 1px solid #dddddd;
+}
+.info ul li small{
+	display: inline-block;
+	width:0.92rem;
+	font-size: 12px;
+	text-align: right;
+	color: #666666;
+}
+.info ul li span{
+	padding-left: 0.25rem;
+}
+.info ul li em{
+	position: absolute;
+	width: 0.06rem;
+	height:0.11rem;
+	background: url("../images/icon_03.png");
+	background-size: 100% 100%;
+	right:0.11rem;
+	top:50%;
+	margin-top: -0.05rem;
+}
+.info_bottom{
+	width:100%;
+	height:0.61rem;
+	background: #eeeeee;
+}
+.info_bottom p{
+	text-align: center;
+	font-size: 12px;
+	color: #666666;
+	line-height: 0.2rem;
+	padding-top: 0.06rem;
+}
+.bg{
+	display: none;
+	width:100%;
+	height:100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	background: #000;
+	opacity: 0.5;
+	z-index: 100;
+	overflow: hidden;
+}
+.change{
+	display: none;
+	width:90%;
+	height:2.69rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	position: absolute;
+	z-index: 2000;
+	left: 50%;
+	margin-left: -45%;
+	bottom:1.5rem;
+}
+.change h4{
+	line-height: 0.46rem;
+	padding-left: 0.2rem;
+	color: #aaaaaa;
+	border-bottom: 1px solid #2ea8e6;
+}
+.change ul li{
+	display: -webkit-box;
+	width: 100%;
+	height:0.43rem;
+	line-height: 0.43rem;
+	position: relative;
+	border-bottom: 1px solid #dddddd;
+}
+.change ul li p{
+	width:0.2rem;
+	height:0.2rem;
+	border:1px solid #dddddd;
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	margin-top: -0.1rem;
+	left: 0.2rem;
+}
+.change ul li p label{
+	position: absolute;
+	width:0.2rem;
+	height: 0.2rem;
+	left: 0;
+	top:0;
+}
+
+.change ul li.on p label{
+	background: url("../images/ic2_03.png");
+	background-size:100% 100%;
+}
+.change ul li input{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	z-index: 1000;
+	opacity: 0;
+}
+.change ul li span{
+	padding-left: 0.5rem;
+}
