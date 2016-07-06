@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@import url(index.css);
+@mixin full($h:100%){
+	width:100%;
+	height:$h;
+	//overflow:hidden;
+}
+@mixin flex($f:row){
+	display:-webkit-flex;
+	display:-o-flex;
+	display:-moz-flex;
+	-webkit-flex-direction:$f;
+	-moz-flex-direction:$f;
+	-o-flex-direction:$f;
+}
+input,select,textarea,button{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+}
+*,*:after,*:before{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+@mixin pos($val:relative){
+	position:$val;
+}
+@mixin aa($w:33px,$h:33px,$url:"fan.png",$top:-16px){
+			width:$w;
+			height:$h;
+			background-image:url("../images/"+$url);
+			background-repeat:no-repeat;
+			background-size:contain;
+			font-size:0;
+			top:50%;
+			margin-top:$top;
+}
+html{
+	font-size:100px;
+}
+html,body,.container{
+	@include full;
+}
+a{
+	text-decoration:none;
+}
+
+.container{
+	@include flex(column);
+	@include pos;
+	overflow:hidden;
+}
+.header{
+	width:100%;
+	height:0.45rem;
+	background:#f6f6f7;
+	@include pos;
+	line-height:0.45rem;
+	a{
+		@include pos(absolute);
+		width:0.21rem;
+		height:0.18rem;
+		&:nth-child(1){
+			//@include aa(0.21rem,0.18rem, ,-0.09rem);
+			left:0.17rem;
+		}
+		&:nth-child(3){
+			@include aa(0.21rem,0.18rem,"2faxianfirstdianji_03.png",-0.09rem);
+			left:90%;
+		}
+	}
+		h4{
+		width:60%;
+		line-height:0.45rem;
+		font-size:0.15rem;
+		margin:0 auto;
+		text-align:center;
+		@include flex;
+		span{
+			display:block;
+			width:50%;
+			text-align:center;
+			line-height:0.45rem;
+		}
+	}
+}
+
+.footer{
+	width:100%;
+	height:0.5rem;
+	background:#e2e2e3;
+	@include flex;
+	text-align:center;
+	a{
+		display:block;
+		width:20%;
+		height:0.45rem;
+	}
+	dl{
+		dt{
+			padding-top:0.05rem;
+			img{
+				width:0.2rem;
+				height:0.2rem;
+			}
+		}
+		dd{
+			color:#909090;
+			font-size:0.11rem;
+		}
+	}
+}
+.bgred{
+	color:#e82843;
+}
+.find{
+	-webkit-flex-grow:1;
+	-moz-flex-grow:1;
+	-o-flex-grow:1;
+	@include flex(column);
+	@include pos;
+}
+.find-item{
+	-webkit-flex-grow:1;
+	-moz-flex-grow:1;
+	-o-flex-grow:1;
+
+	
+}
+
+.pos{
+		@include pos;
+		width:3rem;
+		height:3.11rem;
+		margin:0 auto;
+		margin-top:0.33rem;
+		z-index: 999;
+		a{
+			@include pos(absolute);
+			width:100%;
+			height:3.0rem;
+			left:0.5rem;
+			opacity:0;
+			&:nth-child(1){
+				opacity:1;
+			}
+			
+	}
+
+
+	dl{
+		dt{
+			padding-top:0.1rem;
+			img{
+				width:2rem;
+				height:2.2rem;
+		}
+		}
+		dd{
+			font-size:0.12rem;
+			padding-top:0.1rem;
+			p{
+				background:#fff;
+			}
+			img{
+				width:0.12rem;
+				height:0.09rem;
+			}
+		}
+	}
+	
+}
+.xinqing{
+	height:0.9rem;
+	width:100%;
+	@include flex;
+	border-top:1px solid #808080;
+	text-align:center;
+	a{
+		display:block;
+		width:33%;
+		text-align: center;
+		padding-top:0.1rem;
+		z-index: 1000;
+		&:nth-child(1){
+			dt{
+				background:url(../images/bbg_03.png) no-repeat;
+				background-size: 100% auto;
+				-webkit-transition:all 0.3s;
+			}
+			&:hover{
+				dt{
+					background-position: 0 -0.29rem;
+
+				}
+			};
+			
+		}
+		&:nth-child(2){
+			dt{
+				background:url(../images/2faxian_13.png) no-repeat;
+				background-size: 100% auto;
+			}
+			
+		}
+		&:nth-child(3){
+			dt{
+				background:url(../images/bbg_05.png) no-repeat 0 0.05rem;
+				background-size: 100% auto;
+				-webkit-transition:all 0.3s;
+			}
+			&:hover{
+				dt{
+					background-position: 0 -0.22rem;
+
+				}
+			};
+		}
+	}
+	dl{
+		width:100%;
+		border-right:1px solid #808080;
+		
+		dt{
+			margin:0 auto;
+			width:0.29rem;
+			height:0.29rem;
+			padding-top:0.1rem;
+			padding-bottom:0.1rem;
+			img{
+				width:0.29rem;
+				height:0.29rem;
+			}
+				
+		}
+		dd{
+			font-size:0.12rem;
+			padding-top:0.15rem;
+		}
+	}
+}
+.cover{
+	@include pos(absolute);
+	top:0;
+	left:0;
+	width:3.2rem;
+	height:4.8rem;
+	z-index:1300;
+	//display:none;
+	img{
+		width:3.2rem;
+		height:4.7rem;
+		
+	}
+}
+
+.share{
+	
+	background:rgba(0,0,0,0.2);
+	@include pos(absolute);
+	width:100%;
+	height:100%;
+	z-index:1001;
+	top:0;
+	left:0;
+	.bottom{
+		width:100%;
+		height:0.81rem;
+		@include flex;
+		text-align:center;
+		background:#fff;
+		@include pos(absolute);
+		bottom:0rem;
+		left:0;
+		a{
+			display:block;
+			width:25%;
+			text-align:center;
+		}
+		dl{
+			dt{
+				padding-top:0.12rem;
+				img{
+					width:0.35rem;
+					height:0.26rem;
+				}
+			}
+		}
+	}
+}
+
