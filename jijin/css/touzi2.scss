@@ -1,0 +1,341 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+@mixin full($h:100%){
+	width:100%;
+	height:$h;
+	overflow:hidden;
+}
+@mixin flex($f:row){
+	display:-webkit-flex;
+	-webkit-flex-direction:$f;
+}
+input,select,textarea,button{
+	-webkit-appearance:none;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+
+*,*:after,*:before{
+	-webkit-box-sizing:border-box;
+}
+@mixin pos($val:relative){
+	position:$val;
+}
+@mixin aa($w:0.33rem,$h:0.33rem,$url:"fan.png",$top:-0.16rem){
+			width:$w;
+			height:$h;
+			background-image:url("../images/"+$url);
+			background-repeat:no-repeat;
+			background-size:contain;
+			font-size:0;
+			top:50%;
+			margin-top:$top;
+}
+html{
+	font-size:100px;
+}
+html,body,.container{
+	@include full;
+}
+a{
+	text-decoration:none;
+}
+.container{
+	@include flex(column);
+}
+.header{
+	width:100%;
+	height:0.5rem;
+	@include pos;
+	background:#f5f5f5;
+	h2{
+		text-align:center;
+		line-height:0.5rem;
+		font-size:0.20rem;
+	}
+	a{
+		@include pos(absolute);
+		@include aa(0.12rem,0.21rem,"tuhao-5_06.png",-0.1rem);
+		left:0.13rem;
+	}
+}
+.contain{
+	-webkit-flex-grow:1;
+	width:100%;
+	background:#eee;
+}
+.redBox{
+	width:100%;
+	height:0.9rem;
+	background:#ed5858;
+	color:#fff;
+	h5{
+		font-size:0.14rem;
+		padding-left:0.1rem;
+		line-height:0.3rem;
+	}
+	ul{
+		@include flex;
+		li{
+			width:33%;
+			padding-left:0.2rem;
+			line-height:0.25rem;
+			font-size:0.12rem;
+		}
+	}
+}
+.zhanghuyue{
+	height:0.5rem;
+	background:#eeeeee;
+	@include flex;
+	padding-left:0.1rem;
+	label{
+		display:block;
+		width:0.9rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	span{
+		display:block;
+		width:1.3rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	p{
+		width:0.8rem;
+		height:0.28rem;
+		border:2px solid grey;
+		border-radius:0.05rem;
+		text-align:center;
+		line-height:0.25rem;
+		margin-top:0.1rem;
+	}
+}
+.touzimoney{
+	height:0.5rem;
+	background:#fff;
+	@include flex;
+	padding-left:0.1rem;
+	margin-bottom:0.15rem;
+	label{
+		display:block;
+		width:0.9rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	span{
+		display:block;
+		width:1.3rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	p{
+		width:0.8rem;
+		height:0.5rem;
+		text-align:right;
+		line-height:0.5rem;
+		padding-right:0.1rem;
+	}
+}
+
+.tiyanmoney{
+	height:0.5rem;
+	background:#fff;
+	@include flex;
+	border-bottom:1px solid #eee;
+	padding-left:0.1rem;
+	label{
+		display:block;
+		width:0.9rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	span{
+		display:block;
+		width:1.3rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	p{
+		width:0.48rem;
+		height:0.28rem;
+		border-radius:0.05rem;
+		text-align:center;
+		line-height:0.28rem;
+		margin-top:0.1rem;
+		color:#fff;
+		background:#ccc;
+		margin-left:0.15rem;
+
+	}
+}
+.caimimoney{
+	height:0.5rem;
+	background:#fff;
+	@include flex;
+
+	padding-left:0.1rem;
+	label{
+		display:block;
+		width:0.9rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	span{
+		display:block;
+		width:1.3rem;
+		height:0.5rem;
+		line-height:0.5rem;
+	}
+	p{
+		width:0.8rem;
+		height:0.5rem;
+		text-align:center;
+		line-height:0.5rem;
+	}
+}
+
+.txt{
+	width:100%;
+	height:0.51rem;
+	line-height:0.51rem;
+	text-align:center;
+	span{
+		color:#faac6f;
+	}
+}
+
+.btn{
+	width:2.98rem;
+	height:0.45rem;
+	text-align:center;
+	font-size:18px;
+	line-height:0.45rem;
+	margin:0 auto;
+	background:#fad937;
+	font-weight:bold;
+	border-radius:0.05rem;
+	border-bottom:3px solid rgba(250,185,55,1);
+}
+
+
+/*-------------------------投资成功页面-------------------------*/
+.con{
+	background:#fff;
+	dl{
+		width:2rem;
+		height:2.15rem;
+		margin:0 auto;
+		text-align:center;
+		margin-top:0.5rem;
+		img{
+			width:0.8rem;
+			height:0.8rem;
+		}
+
+		dd{
+			h2{
+				font-size:25px;
+				margin-bottom:0.2rem;
+				
+			}
+			p{
+				line-height:0.5rem;
+				height:0.3rem;
+				color:#d7d7d7;
+			}
+		}
+	}
+}
+.normal{
+	font-weight:normal;
+	margin-top:0.1rem;
+}
+/*--------------------------投资失败页面---------------------------------*/
+
+/*--------------------------投资报错页面---------------------------------*/
+.touzimoney1{
+	margin-bottom:0;
+}
+.tzbaocuo{
+	width:2.5rem;
+	height:0.4rem;
+	background:#585858;
+	color:#fff;
+	text-align:center;
+	line-height:0.4rem;
+	border-radius:0.08rem;
+	margin:0 auto;
+	margin-top:1.09rem;
+}
+
+
+/*----------------------------已通过身份认证----------------------------*/
+.contain{
+	background:#eeeeee;
+}
+.greenBox{
+	width:100%;
+	height:2rem;
+	background:#74ba2f;
+	margin:0 auto;
+	dl{
+		width:1.8rem;
+		height:2.15rem;
+		margin:0 auto;
+		text-align:center;
+		padding-top:0.5rem;
+		img{
+			width:0.8rem;
+			height:0.8rem;
+		}
+
+		dd{
+			h2{
+				font-size:25px;
+				margin-bottom:0.2rem;
+			}
+			p{
+				line-height:0.3rem;
+				height:0.3rem;
+				color:#fff;
+
+			}
+		}
+	}
+}
+
+.fform{
+	p{
+		width:100%;
+		height:0.45rem;
+		background:#fff;
+		line-height:0.45rem;
+		padding-left:0.15rem;
+		&:nth-child(1){
+					border-bottom:1px solid #eee;
+				}
+		input{
+			border:none;
+			outline:none;
+			text-align:right;
+			width:2.2rem;
+			height:0.4rem;
+		}
+	}
+}
+
+/*----------------------投资2页面未使用过--------------------------*/
+.touzijine{
+	border:none;
+	outline:none;
+	font-size:14px;
+}
+#useBtn{
+	background:#ed5858;
+}

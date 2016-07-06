@@ -1,0 +1,144 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+@mixin full($h:100%){
+	width:100%;
+	height:$h;
+	overflow:hidden;
+}
+@mixin flex($f:row){
+	display:-webkit-flex;
+	-webkit-flex-direction:$f;
+}
+input,select,textarea,button{
+	-webkit-appearance:none;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+
+*,*:after,*:before{
+	-webkit-box-sizing:border-box;
+}
+@mixin pos($val:relative){
+	position:$val;
+}
+@mixin aa($w:0.33rem,$h:0.33rem,$url:"fan.png",$top:-0.16rem){
+			width:$w;
+			height:$h;
+			background-image:url("../images/"+$url);
+			background-repeat:no-repeat;
+			background-size:contain;
+			font-size:0;
+			top:50%;
+			margin-top:$top;
+}
+html{
+	font-size:100px;
+}
+html,body,.container{
+	@include full;
+}
+a{
+	text-decoration:none;
+}
+.container{
+	@include flex(column);
+}
+.header{
+	width:100%;
+	height:0.5rem;
+	@include pos;
+	background:#f5f5f5;
+	h2{
+		text-align:center;
+		line-height:0.5rem;
+		font-size:0.20rem;
+	}
+	a{
+		@include pos(absolute);
+		@include aa(0.12rem,0.21rem,"tuhao-5_06.png",-0.1rem);
+		left:0.13rem;
+	}
+}
+.main{
+	-webkit-flex-grow:1;
+	form{
+		div{
+			@include flex;
+			border-bottom:1px solid #ddd;
+			label{
+				padding-left:0.25rem;
+				padding-top:0.17rem;
+			}
+			p{
+				padding-left:0.15rem;
+				padding-top:0.17rem;
+				font-weight:bold;
+				small{
+					color:grey;
+					font-weight:normal;
+				}
+			}
+			input{
+				border:none;
+				outline:none;
+				padding-left:0.15rem;
+				padding-top:0.10rem;
+				width:1.4rem;
+			}
+			&:nth-child(1){
+				height:0.59rem;
+			}
+			&:nth-child(2){
+				height:0.44rem;
+				span{
+					padding-top:0.17rem;
+					padding-left:0.15rem;
+				}
+			}
+			&:nth-child(3){
+				height:0.44rem;
+				span{
+					display:block;
+					width:0.96rem;
+					height:0.29rem;
+					line-height:0.25rem;
+					border:2px solid #ccc;
+					border-radius:0.05rem;
+					margin-top:0.12rem;
+					font-size:13px;
+					text-align:center;
+				}
+			}
+		}
+	}
+	.txt{
+		text-align:center;
+		height:0.39rem;
+		line-height:0.39rem;
+	}
+	.txt1{
+		color:#ff8800;
+	}
+
+	.btn{
+		width:2.98rem;
+		height:0.45rem;
+		text-align:center;
+		font-size:18px;
+		line-height:0.45rem;
+		margin:0 auto;
+		background:#fad937;
+		font-weight:bold;
+		border-radius:0.05rem;
+		border-bottom:3px solid rgba(250,185,55,1);
+		margin-top:2.6rem;
+	}
+	.btn1{
+		margin-top:0.1rem;
+	}
+}

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+input, select, textarea, button {
+  -webkit-appearance: none; }
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei"; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box; }
+
+html {
+  font-size: 100px; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 0.5rem;
+  position: relative;
+  background: #f5f5f5; }
+  .header h2 {
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.20rem; }
+  .header a {
+    position: absolute;
+    width: 0.12rem;
+    height: 0.21rem;
+    background-image: url("../images/tuhao-5_06.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    top: 50%;
+    margin-top: -0.1rem;
+    left: 0.13rem; }
+
+.main {
+  -webkit-flex-grow: 1;
+  background: #eee; }
+  .main form p {
+    width: 100%;
+    height: 0.46rem;
+    line-height: 0.46rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd; }
+    .main form p label {
+      font-size: 13px;
+      padding-left: 0.39rem; }
+    .main form p input {
+      width: 2.02rem;
+      height: 0.43rem;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      padding-left: 0.17rem; }
+
+.btn {
+  width: 2.98rem;
+  height: 0.45rem;
+  text-align: center;
+  font-size: 18px;
+  line-height: 0.45rem;
+  margin: 0 auto;
+  background: #fad937;
+  font-weight: bold;
+  border-radius: 0.05rem;
+  border-bottom: 3px solid #fab937;
+  margin-top: 2.6rem; }
+
+.btn1 {
+  margin-top: 0.1rem; }
+
+.txt {
+  height: 0.39rem;
+  line-height: 0.39rem;
+  padding-left: 0.13rem;
+  color: #ed5858; }
+
+/*------------------------我的银行卡-----------------------*/
+.main1 {
+  background: #fff; }
+
+.addCard {
+  width: 3rem;
+  height: 1rem;
+  border: 1px dashed #ddd;
+  margin: 0 auto;
+  margin-top: 0.1rem; }
+  .addCard dl {
+    width: 1rem;
+    height: 0.64rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.2rem;
+    color: #ddd;
+    font-size: 0.2rem; }
+    .addCard dl dd {
+      padding-top: 0.11rem; }
+    .addCard dl dt {
+      width: 0.4rem;
+      height: 0.4rem;
+      background: url(../images/jiahao_03.png) no-repeat;
+      background-size: 100% 100%;
+      margin: 0 auto; }
+
+.wenzi {
+  width: 2.9rem;
+  height: 2.16rem;
+  margin: 0 auto;
+  margin-top: 0.23rem;
+  font-size: 0.13rem;
+  color: #ddd; }
+  .wenzi h4 {
+    color: #ff8800; }
+
+/*# sourceMappingURL=shenfenrenzheng.css.map */

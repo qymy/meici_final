@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/bangdingbankcard.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="#" id="bangdingBack"></a>
+			<h2>绑定银行卡</h2>
+		</header>
+		<section class="contain">
+			<p><span>温馨提示：</span>只能绑定**龙本人的银行卡</p>
+			<form>
+				<p><label>　开户银行</label><input type="text"></p>
+				<p><label>　支行名称</label><input type="text" placeholder="请输入支行名称"><img src="images/bangdingyinhangka_03.png" id="chooseBank"></p>
+				<p><label>　　　卡号</label><input type="text" placeholder="请输入银行卡号"></p>
+				<p><label>预留手机号</label><b>131*****985</b><i>发送验证码</i></p>
+				<p><label>　　验证码</label><input type="text" placeholder="请输入手机验证码"></p>
+			</form>
+			<div class="tzbaocuo">
+				财户余额不足，请重新输入
+			</div>
+			<div class="btn btn2" id="bcCardnextBtn">下一步</div>
+		</section> 
+	</div>
+	<script src="js/zepto.js"></script>
+	<script src="js/touzi2.js"></script>
+</body>
+</html>

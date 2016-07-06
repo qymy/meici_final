@@ -1,0 +1,273 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+@mixin full($h:100%){
+	width:100%;
+	height:$h;
+	overflow:hidden;
+}
+@mixin flex($f:row){
+	display:-webkit-flex;
+	-webkit-flex-direction:$f;
+}
+input,select,textarea,button{
+	-webkit-appearance:none;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+
+*,*:after,*:before{
+	-webkit-box-sizing:border-box;
+}
+@mixin pos($val:relative){
+	position:$val;
+}
+@mixin aa($w:0.33rem,$h:0.33rem,$url:"fan.png",$top:-0.16rem){
+			width:$w;
+			height:$h;
+			background-image:url("../images/"+$url);
+			background-repeat:no-repeat;
+			background-size:contain;
+			font-size:0;
+			top:50%;
+			margin-top:$top;
+}
+html{
+	font-size:100px;
+}
+html,body,.container{
+	@include full;
+}
+a{
+	text-decoration:none;
+}
+
+/*.main{
+		width:100%;
+		overflow:hidden;
+		-webkit-flex-grow:1;
+		background:#ffc;
+		@include pos;
+		section{
+			@include pos(absolute);
+			width:100%;
+			height:100%;
+			-webkit-flex-basis:100%;
+			-webkit-transform:translate3d(100%,0,0);
+		}
+
+	}*/
+
+.container{
+	@include flex(column);
+}
+.header{
+	width:100%;
+	height:0.5rem;
+	@include pos;
+	background:#f5f5f5;
+	h2{
+		text-align:center;
+		line-height:0.5rem;
+		font-size:0.20rem;
+	}
+	a{
+		@include pos(absolute);
+		@include aa(0.12rem,0.21rem,"tuhao-5_06.png",-0.1rem);
+		left:0.13rem;
+	}
+}
+/*------------------土豪榜------------------*/
+.main{
+	-webkit-flex-grow:1;
+	width:100%;
+	background:url(../images/tuhao-bg_02.png) no-repeat;
+	background-size:100% 100%;
+	ul{
+		width:2.9rem;
+		height:3.5rem;
+		background:#fff;
+		border-radius:10px;
+		margin:0rem auto;
+		margin-top:0.7rem;
+		li{
+			width:100%;
+			height:0.35rem;
+			line-height:0.4rem;
+			border-bottom:1px solid #dddddd;
+			@include flex;
+			i{
+				display:block;
+				width:0.21rem;
+				height:0.18rem;
+				background:url(../images/tuhao-2_03.png) no-repeat;
+				background-size:100% auto;
+				margin-top:0.10rem;
+				margin-left:0.09rem;
+			}
+			span{
+				display:block;
+				width:0.32rem;
+				height:0.28rem;
+				background:url(../images/tuhao-3_03.png) no-repeat;
+				background-size:100% auto;
+				margin-top:0.03px;
+				margin-left:0.09rem;
+			}
+			p{
+				width:1.27rem;
+				height:0.35rem;
+				line-height:0.35rem;
+				padding-left:0.05rem;
+			}
+			h5{
+				line-height:0.35rem;
+				font-size:0.14rem;
+				color:#ff8800;
+			}
+			&:nth-child(2){
+				i{
+					background-position:0 -0.20rem;
+				}
+				span{
+					background-position:0 -0.37rem;
+				}
+				
+			}
+
+			&:nth-child(3){
+				i{
+					background-position:0 -0.45rem;
+				}
+				span{
+					background-position:0 -0.75rem;
+				}
+				
+			}
+
+			&:nth-child(4){
+				i{
+					background-position:0 -0.7rem;
+				}
+				span{
+					background-position:0 -1.15rem;
+				}
+				
+			}
+
+			&:nth-child(5){
+				i{
+					background-position:0 -1.10rem;
+				}
+				span{
+					background-position:0 -1.53rem;
+				}
+				
+			}
+			&:nth-child(6){
+				i{
+					background-position:0 -1.50rem;
+				}
+				span{
+					background-position:0 -1.90rem;
+				}
+				
+			}
+			&:nth-child(7){
+				i{
+					background-position:0 -1.90rem;
+				}
+				span{
+					background-position:0 -2.28rem;
+				}
+			}
+			&:nth-child(8){
+				i{
+					background-position:0 -2.30rem;
+				}
+				span{
+					background-position:0 -2.66rem;
+				}
+				
+			}
+			&:nth-child(9){
+				i{
+					background-position:0 -2.70rem;
+				}
+				span{
+					background-position:0 -3.05rem;
+				}
+				
+			}
+
+			&:nth-child(10){
+				span{
+					background-position:0 -3.42rem;
+				}
+				
+			}
+				}
+		}
+
+		.txt{
+			height:0.4rem;
+			width:100%;
+			line-height:0.4rem;
+			text-align:center;
+		}
+		.btn{
+			width:2.88rem;
+			height:0.45rem;
+			background:#ed5858;
+			line-height:0.45rem;
+			text-align:center;
+			color:#fff;
+			border-radius:5px;
+			margin:0 auto;
+			font-size:18px;
+			font-weight:bold;
+		}
+}
+
+
+/*------------------------土豪榜分享----------------------------*/
+
+.contain{
+	-webkit-flex-grow:1;
+	width:100%;
+	p{
+		width:100%;
+		height:0.4rem;
+		text-align:center;
+		line-height:0.3rem;
+		font-size:0.15rem;
+		margin-top:0.27rem;
+		span{
+			color:#ff8800;
+		}
+	}
+}
+.share{
+	width:100%;
+	height:1.56rem;
+	border-bottom:1px solid #f5f5f5;
+	@include flex;
+	a{
+		width:33%;
+		height:1.56rem;
+		display:block;
+		text-align:center;
+	}
+	dl{
+		padding:0.37rem 0.2rem;
+		font-size:0.12rem;
+	}
+	img{
+		width:0.6rem;
+		height:0.6rem;
+	}
+}
